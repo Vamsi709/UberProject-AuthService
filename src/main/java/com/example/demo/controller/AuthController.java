@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthController {
 
     @PostMapping("/signup/passenger")
-    public ResponseEntity<?> signUp(@RequestBody PassengerSignUpRequestDto){
+    public ResponseEntity<?> signUp(@RequestBody PassengerSignUpRequestDto passengerSignUpRequestDto){
         return null;
 
     }
