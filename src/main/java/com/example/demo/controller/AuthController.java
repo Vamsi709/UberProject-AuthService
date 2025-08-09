@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.dto.PassengerDTO;
 import com.example.demo.dto.PassengerSignUpRequestDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,8 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthController {
 
     @PostMapping("/signup/passenger")
-    public ResponseEntity<?> signUp(@RequestBody PassengerSignUpRequestDto passengerSignUpRequestDto){
-        return null;
+    public ResponseEntity<PassengerDTO> signUp(@RequestBody PassengerSignUpRequestDto passengerSignUpRequestDto){
+
+        return new ResponseEntity<>();
 
     }
 
